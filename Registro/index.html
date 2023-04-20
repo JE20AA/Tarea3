@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Formulario de registro</title>
+</head>
+
+<body>
+    <main>
+        <h1>Registro</h1>
+
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo de Nombre -->
+            <div class="formulario_grupo" id="grupo_usuario">
+                <label for="nombre" class="formulario_label">Nombre</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Ingrese Nombre">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El nombre solo puede contener letras.</p>
+            </div>
+            <!-- Grupo de Apellido -->
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="apellido" class="formulario_label">Apellido</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="apellido" id="apellido" placeholder="Ingrese Apellido">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El apellido solo puede contener letras.</p>
+            </div>
+
+            <!-- Grupo: Numero de identificacion -->
+            <div class="formulario_grupo" id="grupo_telefono">
+                <label for="telefono" class="formulario_label">Numero de Identificacion</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="telefono" id="telefono" placeholder="Ingrese Número de Identificacion">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El Número de Identificación solo puede contener números y el máximo son 10 dígitos.</p>
+            </div>
+            <!-- Grupo: Fecha de Nacimiento -->
+            <div class="formulario_grupo" id="nacimiento">
+                <label for="nacimiento" class="formulario_label"> Fecha de Nacimiento</label>
+                <div class="formulario_grupo-input">
+                    <input class="formulario_input" type="date">
+                </div>
+            </div>
+            <!-- Grupo: Residencia -->
+            <div class="formulario_grupo" id="grupo_usuario">
+                <label for="usuario" class="formulario_label">Ciudad de Residencia</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="usuario" id="usuario" placeholder="Ingrese lugar de residencia">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El nombre solo puede contener letras.</p>
+            </div>
+            <!-- Grupo: Provincia -->
+            <div class="formulario_grupo" id="grupo_usuario2">
+                <label for="usuario2" class="formulario_label">Provincia de Residencia</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="usuario2" id="usuario2" placeholder="Ingrese Provincia de residencia">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El nombre solo puede contener letras.</p>
+            </div>
+            <!-- Grupo: Contraseña -->
+            <div class="formulario_grupo" id="grupo_password">
+                <label for="password" class="formulario_label">Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="password" id="password">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+            </div>
+            <!-- Grupo: Contraseña 2-->
+            <div class="formulario_grupo" id="grupo_password2">
+                <label for="password2" class="formulario_label">Repetir Contraseña</label>
+                <div class="formulario_grupo-input">
+                    <input type="password" class="formulario_input" name="password2" id="password2">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario_grupo" id="grupo_correo">
+                <label for="correo" class="formulario_label">Correo Electrónico</label>
+                <div class="formulario_grupo-input">
+                    <input type="email" class="formulario_input" name="correo" id="correo" placeholder="ingrese su correo, porfavor">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+            <!-- Grupo: Teléfono -->
+            <div class="formulario_grupo" id="grupo_telefono2">
+                <label for="telefono2" class="formulario_label">Teléfono</label>
+                <div class="formulario_grupo-input">
+                    <input type="text" class="formulario_input" name="telefono2" id="telefono2" placeholder="Ingrese su número de teléfono, por favor">
+                    <i class="formulario_validacion-estado fas fa-times circle"></i>
+                </div>
+                <p class="formulario_input-error">El teléfono solo puede contener numeros y el maximo son 10 dígitos.</p>
+            </div>
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="formulario_grupo" id="grupo_terminos">
+                <label class="formulario_label"> 
+                   <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos"> Acepto los Terminos y Condiciones
+              </label>
+            </div>
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i>
+                    <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+            <div class="formulario_grupo formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario_btn">Enviar</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+    <script src="java/java.js"></script>
+
+</body>
+
+</html>
